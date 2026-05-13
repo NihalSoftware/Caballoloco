@@ -46,7 +46,8 @@ const images = {
   ride1: "https://static.wixstatic.com/media/2596c5_9923210f09e246f68f0fc54d220c4033~mv2.jpg/v1/crop/x_0,y_418,w_564,h_417/fill/w_444,h_261,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/download%20(2)_jfif.jpg",
   ride2: "https://static.wixstatic.com/media/2596c5_a8f643cbca5d4316b68aba43695abb40~mv2.jpg/v1/crop/x_0,y_1616,w_4000,h_2768/fill/w_435,h_261,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/pexels-pixabay-210237.jpg",
   coffee1: "https://static.wixstatic.com/media/2596c5_1a27e1b9b71b4ad986ea0a22436a0b46~mv2.jpeg/v1/fill/w_306,h_259,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2596c5_1a27e1b9b71b4ad986ea0a22436a0b46~mv2.jpeg",
-  coffee2: "https://static.wixstatic.com/media/2596c5_4a89ee2d4c6f487b9404ff8207b13a35~mv2.jpeg/v1/crop/x_0,y_84,w_868,h_737/fill/w_306,h_259,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202024-05-06%20at%2010_50_23%20AM.jpeg"
+  coffee2: "https://static.wixstatic.com/media/2596c5_4a89ee2d4c6f487b9404ff8207b13a35~mv2.jpeg/v1/crop/x_0,y_84,w_868,h_737/fill/w_306,h_259,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202024-05-06%20at%2010_50_23%20AM.jpeg",
+  launchBanner: "https://static.wixstatic.com/media/11062b_62f0356712544a87b392417662c4658df000.jpg/v1/fill/w_600,h_119,al_c,q_80,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_62f0356712544a87b392417662c4658df000.jpg"
 };
 
 const productData = [
@@ -283,8 +284,21 @@ function renderHome() {
       <h2 class="news-title">Exciting News</h2>
       <p>Our gallery is relocating soon to <span class="blue-word">Eden Polo<br>Club</span> Stay tuned for the grand opening details</p>
       <h2 class="news-title">Comming Soon</h2>
+    </section>
+    <section class="launch-preview" aria-label="Caballo loco launch preview">
+      <div class="launch-banner">
+        <img src="${images.logo}" alt="Caballo loco logo">
+        <div>
+          <strong>Caballo loco</strong>
+          <span>Art gallery</span>
+        </div>
+      </div>
+      <div class="video-placeholder">
+        <span>Live</span>
+        <strong>Your Video Title</strong>
+      </div>
       <div class="media-strip">
-        ${[images.home1, images.home2, images.home3, images.home4, images.collection1].map((src) => `<img src="${src}" alt="Caballo Loco artwork">`).join("")}
+        ${[images.home1, images.home2, images.collection1, images.home3, images.home4].map((src) => `<img src="${src}" alt="Caballo Loco artwork">`).join("")}
       </div>
     </section>
     <section class="page-shell intro-grid">
@@ -419,7 +433,7 @@ function productPriceBlock(product) {
 
 function renderEvents() {
   return `
-    <section class="page-shell">
+    <section class="page-shell event-page">
       <h1 class="page-title">Events</h1>
       <span class="event-label">latest event live</span>
       <h2 class="event-title">Caballo Loco Art Gallery at the Delhi Horse Show 2025</h2>
@@ -429,6 +443,8 @@ function renderEvents() {
           <li>&#128197; Date: 3rd - 6th April 2025</li>
           <li>&#128205; Venue: Army Riding Club, New Delhi</li>
         </ul>
+      </div>
+      <div class="event-extra">
         <h2>What to Expect:</h2>
         <ul>
           <li>Live Horse-Themed Painting Demos</li>
