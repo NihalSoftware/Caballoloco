@@ -286,17 +286,6 @@ function renderHome() {
       <h2 class="news-title">Comming Soon</h2>
     </section>
     <section class="launch-preview" aria-label="Caballo loco launch preview">
-      <div class="launch-banner">
-        <img src="${images.logo}" alt="Caballo loco logo">
-        <div>
-          <strong>Caballo loco</strong>
-          <span>Art gallery</span>
-        </div>
-      </div>
-      <div class="video-placeholder">
-        <span>Live</span>
-        <strong>Your Video Title</strong>
-      </div>
       <div class="media-strip">
         ${[images.home1, images.home2, images.collection1, images.home3, images.home4].map((src) => `<img src="${src}" alt="Caballo Loco artwork">`).join("")}
       </div>

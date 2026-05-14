@@ -335,65 +335,7 @@ main {
 .launch-preview {
   background: #f7f7f7;
   overflow: hidden;
-}
-
-.launch-banner {
-  width: 100%;
-  height: 180px;
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 43px 0 0;
-  background:
-    linear-gradient(120deg, rgba(255, 255, 255, .45), rgba(160, 160, 160, .22)),
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, .06) 0 1px, rgba(0, 0, 0, .03) 1px 2px),
-    #cfcfcf;
-  color: #0b0b0b;
-}
-
-.launch-banner img {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-}
-
-.launch-banner strong,
-.launch-banner span {
-  display: block;
-}
-
-.launch-banner strong {
-  margin-top: -2px;
-  font-size: 38px;
-  line-height: .9;
-}
-
-.launch-banner span {
-  font-size: 12px;
-}
-
-.video-placeholder {
-  width: min(820px, calc(100vw - 44px));
-  height: 430px;
-  margin: -46px auto 36px;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  gap: 10px;
-  border-radius: 32px 32px 0 0;
-  background: #040404;
-  color: #fff;
-  text-align: center;
-}
-
-.video-placeholder span {
-  color: #e4e4e4;
-  font-size: 18px;
-}
-
-.video-placeholder strong {
-  font-size: 28px;
-  font-weight: 400;
+  padding: 34px 0 0;
 }
 
 .media-strip {
@@ -1364,15 +1306,6 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .launch-banner {
-    height: 170px;
-  }
-
-  .video-placeholder {
-    height: 300px;
-    margin-top: -28px;
-  }
-
   .event-extra {
     margin-top: 180px;
   }
@@ -1482,10 +1415,6 @@ main {
 
   .news-title {
     margin-bottom: 38px;
-  }
-
-  .video-placeholder {
-    height: 240px;
   }
 
   .product-breadcrumb {
