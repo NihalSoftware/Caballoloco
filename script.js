@@ -638,7 +638,7 @@ function renderNihalFoundation() {
         <li>Sponsor student/faculty exchange programs.</li>
         <li>Support and sponsor equestrian events and raise awareness for better conditions for retired horses.</li>
       </ul>
-      <a class="primary-link" href="#copy-of-book-online-1">Read More</a>
+      <a class="primary-link" href="https://www.nihalfoundation.in/" target="_blank" rel="noopener noreferrer">Read More</a>
     </section>
   `;
 }
@@ -654,7 +654,7 @@ function renderStudentSpace() {
       <h2>StudentSpace, an innovative software company</h2>
       <p>Student Tracking, Retention and Early Intervention Solutions for at-risk students. StudentSpace has successfully implemented solutions for over 250 institutions and has served above 250000 students since 1998.</p>
       <p>StudentSpace global services offer SQL database auditing, data integration, data management, and SQL reporting services. With StudentSpace, institutions can track, retain, and help students achieve their full potential.</p>
-      <a class="primary-link" href="#copy-of-book-online-1">Read More</a>
+      <a class="primary-link" href="https://www.studentspace.com/" target="_blank" rel="noopener noreferrer">Read More</a>
     </section>
   `;
 }
